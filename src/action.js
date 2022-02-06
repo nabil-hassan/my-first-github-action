@@ -6,6 +6,9 @@ async function run() {
 
   const TOKEN = core.getInput('TOKEN');
   const octokit = github.getOctokit(TOKEN);
+
+console.log(octokit);
+
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
