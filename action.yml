@@ -1,0 +1,12 @@
+name: 'My First Action'
+description: 'A basic introductory github action'
+author: 'Nabil Hassan'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

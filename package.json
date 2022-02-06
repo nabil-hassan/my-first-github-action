@@ -1,0 +1,23 @@
+{
+  "name": "my-first-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/action.js -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabil-hassan/my-first-github-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabil-hassan/my-first-github-action/issues"
+  },
+  "homepage": "https://github.com/nabil-hassan/my-first-github-action#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.1"
+  }
+}
