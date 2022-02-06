@@ -8474,9 +8474,15 @@ const github = __nccwpck_require__(5438);
 async function run() {
   console.log('Hello, world!');
 
-  const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
+  const TOKEN = core.getInput('TOKEN');
+  const octokit = github.getOctokit(TOKEN);
+
+  console.log(octokit);
+
   const { context = {} } = github;
   const { pull_request } = context.payload;
+
+  console.log("Creating comment");
 
   await octokit.issues.createComment({
       ...context.repo,
