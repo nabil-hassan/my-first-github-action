@@ -3,7 +3,7 @@ description: 'A basic introductory github action'
 author: 'Nabil Hassan'
 
 inputs:
-  GITHUB_TOKEN:
+  TOKEN:
     description: 'GitHub token'
     required: true
 
